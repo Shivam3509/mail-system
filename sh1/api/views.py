@@ -23,5 +23,6 @@ class ListAPIView(RetrieveModelMixin,ListModelMixin,CreateModelMixin,GenericAPIV
             queryset = Student.objects.filter(pk=id_)
         else:
             queryset = Student.objects.all()
+            print("print")
         return queryset
     
